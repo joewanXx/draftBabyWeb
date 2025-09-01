@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Johan Web</title>
+    <title>Admin - Johan Web</title>
     <style>
         body {
             background:
                 linear-gradient(to bottom, rgba(240, 240, 240, 0), rgba(0, 0, 0, 0.7)),
-                url('/static/luffybglong.webp') center/cover no-repeat;
+                url('/static/sirtapos.gif') center/cover no-repeat;
             font-family: Arial, sans-serif;
             text-align: center;
             
@@ -25,7 +25,7 @@
         h1 {
             font-family: 'Inter', sans-serif;
             font-weight: 750;
-            color: #df8fff;
+            color: #ff8c00;
         }
 
         img {
@@ -58,53 +58,62 @@
             padding: 50px;
             background-color: rgba(0, 0, 0, 0.39);
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
+        .center-text {
+            text-align: center;
+        }
         #bg-blur {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: inherit;
-            filter: blur(3px);
+            backdrop-filter: blur(5px);
             z-index: -1;
         }
-
-        .center-text {
+        #titlebor {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            width: 50vw;
+            margin-left: auto;
+            margin-right: auto;
             text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <div id="bg-blur"></div>
+    <div id="titlebor">
+        <h1>
+          <span style="color: white;">Kamusta</span>
+          <span style="color: rgb(0, 0, 0); 
+          background-color: #FFA500; 
+          border-radius: 8px; 
+          padding: 2px 8px;">
+            Admin
+          </span>
+        </h1>
+    </div>
     <div id="container">
+        
         <h1>I Love You, Mah Homie!</h1>
 
         <div>  
         <p class="center-text">Magmahalan tayo!</p>
         
-        <img src="static/jhepoy-dizon.gif" height="200">
+        <img src="static/sirtapos.gif" height="200">
         
-        <p>
-            TANGINA MO, JHEPOY DIZON! 
-            ANG PANGIT NG PAGMUMUKHA MO, 
-            KITA MO NA BANG MUKHA MO SA SALAMIN? 
-            TANGINA MO! ANG PANGIT MO, HA? 
-            Tangina mo! At anong ang sinasabi mong
-            pulubi at taga-hugas ako ng pinggan ha? 
-            TANGINA MO! Tignan mo nga bahay ko, 
-            BILLAGE YAN, eh-a-at ikaw naman, ano ha? 
-            Tangina mo skwater? HA? Nagyayabang ka
-            pang may laptop at kita mo to hampas ko
-            to sa pagmumukha mo eh no? Tangina mo,
-            ha, ha? Ano, ha? Lalaban pa ka ha?
-            Tangina mo mag-extend ka na dyan, time ka na eh.
+
+        <p style="text-align: center; font-size: 25px;">
+            ser tapos na po
         </p>
 
-        <h1>Hoy! Pogi ba si Johan?</h1>
+        <h1 style="text-align: center; font-size: 20px;">
+            Hoy! Pogi ba si Johan?</h1>
         <button>Oo</button> <button>Hindi</button>
         
         <p>

@@ -10,9 +10,13 @@ def home():
 def meme():
     return render_template("user.html")
 
+@app.route("/admin")
+def admin():
+    return render_template("admin.html")
+
 @app.route("/<name>")
 def user(name):
-    return render_template("index.html", content=name, tt="Tanga ka!")
+    return render_template("index.html", content=name, tt="pakiss naman oh!")
 
 if __name__ == "__main__":
     app.run(debug=True)
