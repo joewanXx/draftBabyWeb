@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-
     <style>
         body {
             background: #fefefe;
@@ -30,14 +25,7 @@
             color: #000000;
         }
 
-        h3 {
-            font-family: 'inter', sans-serif;
-            font-weight: 750;
-            color: #000000;
-        }
-
         img {
-            margin: 30px;
             border: 2px solid #000;
             border-radius: 10px;
         }
@@ -47,7 +35,7 @@
             max-height: 100%;
             margin: 0 auto;
             padding: 100px;
-            padding-top: 20px;
+            padding-top: 60px;
             background-color: #f1f1f1;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -84,17 +72,7 @@
         .center-text {
             text-align: center;
         }
-
-        .top-margin{
-            margin-top: 100px;
-        }
-
-        .job-border {
-            border-bottom: 2px solid #00000062;
-            padding-bottom: 1px;
-            margin-bottom: 20px;
-        }
-
+        
         button {
             background-color: #008CBA;
             border: none;
@@ -126,8 +104,8 @@
         .btn-alt {
             background-color: #f4f4f4;
             color: #333;
-            border: 0px solid #333;
-            padding: 10px 15px;
+            border: 2px solid #333;
+            padding: 10px 20px;
             border-radius: 6px;
             cursor: pointer;
             font-weight: bold;
@@ -140,8 +118,6 @@
 
     </style>
 </head>
-
-<!-- BODY -->  
 
 <body>
     <div id="top-bar">
@@ -158,42 +134,19 @@
     <div id="bg-blur"></div>
         
         <div id="container">
-
-            <h1 style="font-size: 30px; font-family: 'inter', sans-serif;">
-                {{company_name}}
-            </h1>
-
             <img src="static/sirtapos.gif" height="200">
-
-            <h1>
-                About Me
+            
+            <h1>    
+                About Joe
             </h1>
 
             <p>
                 Si Johan ay isang taong likas ang kabutihang-loob at laging handang tumulong sa kapwa, kahit hindi hinihingi. Matalino siya at may malalim na pag-unawa sa mga bagay-bagay, kaya’t madalas siyang sandalan ng mga kaibigan sa oras ng pangangailangan. Hindi siya natitinag sa harap ng hamon—sa halip, tinatanggap niya ito nang may tapang at determinasyon. Bukod sa pagiging seryoso sa mga mahahalagang bagay, may kakayahan din siyang magpatawa at magpasaya ng paligid, kaya’t hindi kailanman boring ang kanyang presensya. Sa puso ni Johan, mahalaga ang pamilya, pagkakaibigan, at ang pagiging totoo sa sarili—mga halagang hindi niya kailanman isinasantabi.
 
             </p>
-
-            <h1 class="top-margin">
-                Show jobs here
-            </h1>
-
-            <p class="center-text"> 
-                {{ jobs|length }} job(s) found.
-            </p>
-
-            <div>  
-                {% for job in jobs %}
-                    {% include 'job-items.html' %}
-                {% endfor %}
-            </div>
-
-            <h1 class="top-margin">
-                Any troubles?
-            </h1>
-            <button>Contact Me</button>
-
-<!-- LISTAHAN -->            
+            <h1 style="font-size: 25px;">Any troubles?</h1>
+            <button>Contact Me</button> 
+            
             <p class="center-text">
                 <span>
                     Copyright 2025, Johan
